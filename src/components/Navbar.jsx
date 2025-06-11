@@ -5,13 +5,11 @@ import {
   MenuItem,
   MenuItems,
 } from "@headlessui/react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import avatar from "../assets/icons/avatar.png";
 
-
 export default function Navbar() {
-
   //tailwindui.com/components/preview adresinden navbar aldık ve navigation, mobile menu button, open, Disclosure.Panel sildik
   return (
     <>
@@ -21,9 +19,9 @@ export default function Navbar() {
       >
         <div className="mx-auto  px-2 sm:px-6 lg:px-8">
           <div className="relative flex h-16 items-center justify-between">
-            {/* <Link className="pr-2 text-2xl font-semibold" to="/">
+            <Link className="pr-2 text-2xl font-semibold" to="/">
               Movie App
-            </Link> */}
+            </Link>
 
             <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
               {/* kullanıcı giriş yaptıysa displayName ekranda görünsün */}
@@ -36,7 +34,7 @@ export default function Navbar() {
                     <span className="sr-only">Open user menu</span>
                     <img
                       alt=""
-                      src={ avatar}
+                      src={avatar}
                       className="h-8 w-8 rounded-full"
                       referrerPolicy="no-referrer"
                     />
@@ -48,27 +46,25 @@ export default function Navbar() {
                 >
                   <>
                     <MenuItem>
-                      {/* <Link
+                      <Link
                         to="/register"
                         className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100"
                       >
                         Register
-                      </Link> */}
+                      </Link>
                     </MenuItem>
                     <MenuItem>
-                      {/* <Link
+                      <Link
                         to="/login"
                         className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100"
                       >
                         Login
-                      </Link> */}
+                      </Link>
                     </MenuItem>
                   </>
 
                   <MenuItem>
-                    <span
-                      className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 cursor-pointer"
-                    >
+                    <span className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 cursor-pointer">
                       Log out
                     </span>
                   </MenuItem>
